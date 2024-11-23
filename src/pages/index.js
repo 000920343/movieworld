@@ -113,7 +113,7 @@ const Home = () => {
         </p>
         <div>
           <Link href="/movies">
-            <a
+            <button
               style={{
                 margin: '0 1rem',
                 padding: '0.8rem 1.5rem',
@@ -125,15 +125,17 @@ const Home = () => {
                 fontWeight: 'bold',
                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
                 transition: 'transform 0.3s ease',
+                border: 'none',
+                cursor: 'pointer',
               }}
               onMouseOver={(e) => (e.target.style.transform = 'scale(1.1)')}
               onMouseOut={(e) => (e.target.style.transform = 'scale(1)')}
             >
               Browse Movies
-            </a>
+            </button>
           </Link>
           <Link href="/about">
-            <a
+            <button
               style={{
                 margin: '0 1rem',
                 padding: '0.8rem 1.5rem',
@@ -145,12 +147,14 @@ const Home = () => {
                 fontWeight: 'bold',
                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
                 transition: 'transform 0.3s ease',
+                border: 'none',
+                cursor: 'pointer',
               }}
               onMouseOver={(e) => (e.target.style.transform = 'scale(1.1)')}
               onMouseOut={(e) => (e.target.style.transform = 'scale(1)')}
             >
               Learn More
-            </a>
+            </button>
           </Link>
         </div>
       </div>
